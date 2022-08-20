@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import data from './data.js'
+import Card from './components/Card.js'
+import NavBar from './components/NavBar.js'
+import MainBody from './MainBody'
 
-function App() {
+
+function App() { 
+  
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <>
+     <NavBar icon="https://www.freepnglogos.com/uploads/globe-png/blue-globe-transparent-sporetesting-39.png"
+      title="my travel journal" />
+    <MainBody params={data} />
+   </>
   );
+
 }
 
 export default App;
