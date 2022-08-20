@@ -9,6 +9,8 @@ console.log(props)
             return (<div className='main-card-body'>
                <img className="photo-img" src={elem.imageUrl} /> 
                <div className="text-desc"> {elem.description} </div>
+               <div className="text-desc"> {elem.description} </div>
+
             </div>)
         } 
           
